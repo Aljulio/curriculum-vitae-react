@@ -3,8 +3,13 @@
   background-color: #f8f8f8; /* Un color de fondo claro para la barra */
   padding: 10px 0;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Sombra sutil para que se vea elevada */
-  margin-bottom: 20px; /* Espacio debajo de la barra */
+  /* margin-bottom: 20px;  // Puedes ajustar o quitar este margen si no es necesario */
   text-align: center; /* Centrar los elementos de la lista */
+
+  /* ¡PROPIEDADES AÑADIDAS PARA HACERLA FIJA! */
+  position: sticky; /* Hace que el elemento se "pegue" cuando se desplaza */
+  top: 0;           /* Se pegará en la parte superior de la ventana del navegador */
+  z-index: 1000;    /* Asegura que la barra esté por encima de otros contenidos */
 }
 
 .main-nav ul {
