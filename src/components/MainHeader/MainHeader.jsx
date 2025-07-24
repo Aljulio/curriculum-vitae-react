@@ -9,9 +9,10 @@ function MainHeader() {
         <img src={myPhoto} alt="Tu Foto de Perfil" className="main-profile-picture" />
         <div className="main-info">
           <h1 className="main-name">Julio Alberto Hernandez Morales</h1>
-          <p className="main-contact-info">
-            Correo: <a href="mailto:julioalbertoh79@gmail.com">julioalbertoh79@gmail.com</a> | Tel: +502 59079563
-          </p>
+          {/* ¡ELIMINADO: Información de contacto (correo y teléfono) */}
+          {/* <p className="main-contact-info">
+            <strong>Correo:</strong> <a href="mailto:julioalbertoh79@gmail.com">julioalbertoh79@gmail.com</a> <span className="separator">|</span> <strong>Teléfono:</strong> <span className="phone-number">+502 59079563</span>
+          </p> */}
         </div>
       </div>
       {/* La barra de navegación ahora está dentro de este header */}

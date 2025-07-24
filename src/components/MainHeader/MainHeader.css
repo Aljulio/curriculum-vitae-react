@@ -7,6 +7,11 @@
   flex-direction: column; /* Apilar elementos (contenido y nav) */
   align-items: center; /* Centrar horizontalmente */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+  
+  /* Agregado para intentar eliminar las barras: */
+  overflow: hidden; /* Asegura que no haya barras de desplazamiento dentro del header */
+  width: 100%; /* Asegura que ocupe todo el ancho disponible */
+  min-width: 320px; /* Un ancho mínimo razonable para evitar compresión excesiva */
 }
 
 .main-header-content {
@@ -43,7 +48,6 @@
   font-size: 1em;
   margin: 0;
   opacity: 0.9;
-  /* ¡NUEVAS PROPIEDADES PARA VISTA MÓVIL! */
   display: flex;
   flex-direction: column; /* Apila el correo y el teléfono */
   gap: 5px; /* Pequeño espacio entre ellos */
@@ -117,7 +121,7 @@
 
   .main-contact-info {
     font-size: 1.2em;
-    flex-direction: row; /* ¡CAMBIADO: Vuelve a ser fila en desktop! */
+    flex-direction: row; /* Vuelve a ser fila en desktop */
     gap: 0; /* Elimina el espacio extra en desktop */
   }
 
