@@ -66,22 +66,7 @@ Una vez que el despliegue esté completo (puede tardar unos minutos), tu CV esta
 
 https://Aljulio.github.io/curriculum-vitae-react/
 
-Estructura del Proyecto
-[Aquí podrías añadir una lista de las carpetas y archivos principales de tu proyecto para dar una visión general de su estructura, por ejemplo:]
 
-.
-├── public/           # Archivos estáticos (como index.html, imágenes, favicon)
-├── src/              # Código fuente de la aplicación React
-│   ├── assets/       # Imágenes, iconos, etc.
-│   ├── components/   # Componentes reutilizables de React (ej. MainHeader, PersonalInfo, etc.)
-│   ├── styles/       # Archivos CSS globales o variables de estilo (si los tienes)
-│   ├── App.jsx       # Componente principal de la aplicación
-│   ├── index.css     # Estilos globales
-│   └── main.jsx      # Punto de entrada de la aplicación (o index.js si usas Create React App)
-├── .gitignore        # Archivos y carpetas ignorados por Git
-├── package.json      # Metadatos del proyecto y dependencias
-├── README.md         # Este archivo
-└── vite.config.js    # Configuración de Vite (si usas Vite)
 
 Autor
 Julio Alberto Hernández Morales
