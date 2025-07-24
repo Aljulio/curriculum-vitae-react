@@ -7,7 +7,7 @@
   flex-direction: column; /* Apilar elementos (contenido y nav) */
   align-items: center; /* Centrar horizontalmente */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra sutil */
-  
+
   /* Agregado para intentar eliminar las barras: */
   overflow: hidden; /* Asegura que no haya barras de desplazamiento dentro del header */
   width: 100%; /* Asegura que ocupe todo el ancho disponible */
@@ -29,7 +29,7 @@
   height: 100px;
   border-radius: 0; /* Para hacerla cuadrada */
   object-fit: cover;
-  border: 3px solid #3498db; /* Borde azul */
+  /* ¡Línea del borde azul eliminada! */
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
 }
 
@@ -114,7 +114,7 @@
     height: 150px;
     margin-right: 30px; /* Espacio a la derecha de la foto */
   }
-  
+
   .main-name {
     font-size: 3em; /* Nombre más grande en desktop */
   }
