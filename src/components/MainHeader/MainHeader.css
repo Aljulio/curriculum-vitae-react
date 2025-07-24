@@ -23,10 +23,9 @@
   margin-bottom: 20px;
 }
 
-/* ¡CAMBIADO AQUÍ! Aumentado el tamaño de la foto para móviles */
 .main-profile-picture {
-  width: 140px; /* Nuevo tamaño de la foto para móviles */
-  height: 140px; /* Nuevo tamaño de la foto para móviles */
+  width: 140px; /* Tamaño de la foto para móviles */
+  height: 140px; /* Tamaño de la foto para móviles */
   border-radius: 0;
   object-fit: cover;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
@@ -137,10 +136,9 @@
     margin-bottom: 30px;
   }
 
-  /* ¡CAMBIADO AQUÍ! Aumentado el tamaño de la foto para desktop */
   .main-profile-picture {
-    width: 200px; /* Nuevo tamaño de la foto para desktop */
-    height: 200px; /* Nuevo tamaño de la foto para desktop */
+    width: 200px;
+    height: 200px;
     margin-right: 30px;
   }
 
@@ -155,7 +153,7 @@
     margin-bottom: 15px;
     text-align: left;
     text-decoration: none;
-    margin-left: 40px; /* Mantén este valor para desktop */
+    margin-left: 40px;
   }
 
   .main-contact-info {
@@ -188,21 +186,15 @@
   }
   /* Ajuste para el subtítulo en móviles pequeños */
   .main-subtitle {
-    font-size: 0.85em;
+    font-size: 0.75em; /* ¡CAMBIADO AQUÍ! Reduce aún más el tamaño de fuente para que quepa bien en móviles muy pequeños */
     margin-top: 3px;
     margin-bottom: 8px;
     text-decoration: none;
     text-align: center;
-    /* No añadir margin-left aquí para que siga centrado en móvil */
   }
   .main-contact-info {
     font-size: 0.9em;
   }
-  /* No es necesario redefinir .main-profile-picture aquí si ya se hizo arriba y es responsive */
-  /* .main-profile-picture {
-    width: 90px;
-    height: 90px;
-  } */
   .main-nav li {
     margin: 5px 5px;
   }

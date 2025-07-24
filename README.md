@@ -86,25 +86,6 @@ Una vez que el despliegue esté completo (puede tardar unos minutos), tu CV esta
 
 **[https://Aljulio.github.io/MiCV/](https://Aljulio.github.io/MiCV/)**
 
----
 
-## Estructura del Proyecto
-
-.
-├── public/                 # Archivos estáticos (imágenes, favicons, etc.)
-│   └── images/             # Tus imágenes de perfil
-├── src/                    # Código fuente de React
-│   ├── assets/             # (Opcional) Otros assets estáticos
-│   ├── components/         # Componentes reutilizables (Personal, Objetivo, etc.)
-│   ├── App.jsx             # Componente principal de la aplicación
-│   ├── index.css           # Estilos CSS globales
-│   └── main.jsx            # Punto de entrada de la aplicación React
-├── .gitignore              # Archivos y carpetas ignorados por Git
-├── package.json            # Metadatos del proyecto y scripts de npm
-├── vite.config.js          # Configuración de Vite
-├── README.md               # Este archivo de documentación
-└── index.html              # Archivo HTML principal
-
----
 ## Autor
 **Julio Alberto Hernández Morales**
