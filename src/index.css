@@ -1,4 +1,7 @@
-/* src/index.css */
+html {
+  scroll-behavior: smooth; /* ¡NUEVA LÍNEA AÑADIDA AQUÍ! */
+}
+
 body {
   margin: 0;
   font-family: sans-serif;

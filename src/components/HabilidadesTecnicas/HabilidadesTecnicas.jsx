@@ -1,10 +1,9 @@
-// src/components/HabilidadesTecnicas/HabilidadesTecnicas.jsx
 import React from 'react';
 import './HabilidadesTecnicas.css'; // Importa los estilos para este componente
 
 function HabilidadesTecnicas() {
   return (
-    <section id="habilidades-tecnicas" className="skills-container">
+    <section id="habilidades" className="skills-container"> {/* AÑADIDO: id="habilidades" */}
       <h2 className="skills-title">Habilidades Técnicas</h2>
 
       <div className="skill-category">

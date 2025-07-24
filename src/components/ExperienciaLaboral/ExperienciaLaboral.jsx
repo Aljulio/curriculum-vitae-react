@@ -1,10 +1,9 @@
-// src/components/ExperienciaLaboral/ExperienciaLaboral.jsx
 import React from 'react';
 import './ExperienciaLaboral.css'; // Importa los estilos para este componente
 
 function ExperienciaLaboral() {
   return (
-    <section id="experiencia-laboral" className="experience-container">
+    <section id="experiencia" className="experience-container"> {/* AÑADIDO: id="experiencia" */}
       <h2 className="experience-title">Experiencia Laboral</h2>
       <div className="experience-item">
         <h3 className="job-title">Técnico de Instalación Solar</h3>

@@ -1,11 +1,10 @@
-// src/components/PersonalInfo/PersonalInfo.jsx
 import React from 'react';
 import './PersonalInfo.css'; // Importa los estilos para este componente
 import myPhoto from '../../assets/mi-foto-perfil.jpg'; // Carga tu foto
 
 function PersonalInfo() {
   return (
-    <section id="personal-info" className="personal-info-container">
+    <section id="personal" className="personal-info-container"> {/* AÑADIDO: id="personal" */}
       <h2>Información Personal</h2> 
       {/* Aquí se muestra tu foto */}
       <img src={myPhoto} alt="Tu Foto de Perfil" className="profile-picture" />
@@ -65,10 +64,7 @@ function PersonalInfo() {
           <span className="detail-label">Profesión:</span>
           <span className="detail-value">Bachiller en Ciencias y Letras con Orientación en Electricidad</span>
         </div>
-
-    
       </div>
-
       {/* Se eliminó el párrafo de descripción del perfil */}
     </section>
   );

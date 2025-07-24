@@ -1,10 +1,9 @@
-// src/components/Contacto/Contacto.jsx
 import React from 'react';
 import './Contacto.css'; // Importa los estilos para este componente
 
 function Contacto() {
   return (
-    <section id="contacto" className="contact-container">
+    <section id="contacto" className="contact-container"> {/* El id="contacto" ya está correcto */}
       <h2 className="contact-title">Contacto</h2>
       <div className="contact-info">
         <p className="contact-item">

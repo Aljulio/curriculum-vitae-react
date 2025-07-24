@@ -1,0 +1,16 @@
+/* Estilos para el nuevo título "Curriculum Vitae" */
+.main-header {
+  background-color: #4285F4; /* ¡AJÚSTALO A TU AZUL EXACTO SI AÚN NO LO HAS HECHO! */
+  color: white; /* Letras blancas */
+  padding: 20px 0;
+  text-align: right; /* Alineado a la derecha, como lo pediste */
+  padding-right: 50px; /* Ajusta este valor si quieres más o menos espacio */
+  font-size: 2.5em;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.main-header h1 {
+  margin: 0;
+  padding: 0;
+}
