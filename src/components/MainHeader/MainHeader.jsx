@@ -9,7 +9,9 @@ function MainHeader() {
         <img src={myPhoto} alt="Tu Foto de Perfil" className="main-profile-picture" />
         <div className="main-info">
           <h1 className="main-name">Julio Alberto Hernandez Morales</h1>
-          {/* ¡ELIMINADO: Información de contacto (correo y teléfono) */}
+          {/* ¡AÑADIDO AQUÍ! El subtítulo */}
+          <h2 className="main-subtitle">Bachiller en Ciencias y Letras con Orientación en Electricidad</h2>
+          {/* Información de contacto (correo y teléfono) - si la tuvieras, iría aquí */}
           {/* <p className="main-contact-info">
             <strong>Correo:</strong> <a href="mailto:julioalbertoh79@gmail.com">julioalbertoh79@gmail.com</a> <span className="separator">|</span> <strong>Teléfono:</strong> <span className="phone-number">+502 59079563</span>
           </p> */}
