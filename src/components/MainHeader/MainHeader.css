@@ -22,9 +22,9 @@
 .main-profile-picture {
   width: 100px; /* Tamaño de la foto */
   height: 100px;
-  border-radius: 0; /* ¡CAMBIADO: Para hacerla cuadrada! */
+  border-radius: 0; /* Para hacerla cuadrada */
   object-fit: cover;
-  border: 3px solid #3498db; /* ¡CAMBIADO: Borde azul! */
+  border: 3px solid #3498db; /* Borde azul */
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
 }
 
@@ -43,6 +43,10 @@
   font-size: 1em;
   margin: 0;
   opacity: 0.9;
+  /* ¡NUEVAS PROPIEDADES PARA VISTA MÓVIL! */
+  display: flex;
+  flex-direction: column; /* Apila el correo y el teléfono */
+  gap: 5px; /* Pequeño espacio entre ellos */
 }
 
 .main-contact-info a {
@@ -113,6 +117,8 @@
 
   .main-contact-info {
     font-size: 1.2em;
+    flex-direction: row; /* ¡CAMBIADO: Vuelve a ser fila en desktop! */
+    gap: 0; /* Elimina el espacio extra en desktop */
   }
 
   .main-nav ul {
