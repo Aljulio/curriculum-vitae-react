@@ -3,10 +3,7 @@
   background-color: #f8f8f8; /* Un color de fondo claro para la barra */
   padding: 10px 0;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Sombra sutil para que se vea elevada */
-  /* margin-bottom: 20px;  // Puedes ajustar o quitar este margen si no es necesario */
   text-align: center; /* Centrar los elementos de la lista */
-
-  /* ¡PROPIEDADES AÑADIDAS PARA HACERLA FIJA! */
   position: sticky; /* Hace que el elemento se "pegue" cuando se desplaza */
   top: 0;           /* Se pegará en la parte superior de la ventana del navegador */
   z-index: 1000;    /* Asegura que la barra esté por encima de otros contenidos */
@@ -27,12 +24,42 @@
 
 .main-nav a {
   text-decoration: none; /* Quitar el subrayado de los enlaces */
-  color: #333; /* Color del texto de los enlaces */
+  color: #333; /* Color del texto del texto de los enlaces */
   font-weight: bold;
   padding: 5px 0;
   transition: color 0.3s ease; /* Transición suave para el color */
+  display: block; /* Hace que el área de clic sea más grande */
 }
 
 .main-nav a:hover {
   color: #007bff; /* Color al pasar el ratón (puedes ajustar este azul) */
+}
+
+/* --- Ajustes para dispositivos móviles (pantallas de 768px o menos) --- */
+@media (max-width: 768px) {
+  .main-nav {
+    padding: 8px 0; /* Un poco menos de padding vertical para pantallas pequeñas */
+  }
+
+  .main-nav li {
+    margin: 5px 8px; /* Reducir el margen horizontal y añadir un poco de margen vertical */
+  }
+
+  .main-nav a {
+    font-size: 0.9em; /* Reducir un poco el tamaño de la fuente */
+    padding: 8px 12px; /* Aumentar el padding para hacer el área de clic más grande */
+    border-radius: 5px; /* Añadir esquinas redondeadas a los botones */
+    background-color: #e0e0e0; /* Un fondo suave para cada botón */
+    color: #333; /* Color del texto de los enlaces */
+  }
+
+  .main-nav a:hover {
+    background-color: #d0d0d0; /* Cambiar el fondo al pasar el ratón */
+    color: #007bff; /* Color del texto al pasar el ratón */
+  }
+
+  .main-nav ul {
+    justify-content: space-around; /* Distribuir los elementos de manera más uniforme */
+    padding: 0 10px; /* Añadir padding horizontal al ul para evitar que los botones toquen los bordes */
+  }
 }
