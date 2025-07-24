@@ -2,13 +2,13 @@
 .main-header-container {
   background-color: #4285F4; /* Tu azul principal */
   color: white; /* Texto blanco */
-  padding: 30px 20px 10px; /* Padding superior, horizontal, inferior */
+  /* ¡CAMBIADO AQUÍ! Aumentado el padding superior e inferior para el tamaño final */
+  padding: calc(110px + env(safe-area-inset-top)) 20px 90px; /* Último ajuste de padding superior e inferior */
   display: flex;
   flex-direction: column; /* Apilar elementos (contenido y nav) */
   align-items: center; /* Centrar horizontalmente */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra sutil */
 
-  /* Agregado para intentar eliminar las barras: */
   overflow: hidden; /* Asegura que no haya barras de desplazamiento dentro del header */
   width: 100%; /* Asegura que ocupe todo el ancho disponible */
   min-width: 320px; /* Un ancho mínimo razonable para evitar compresión excesiva */
@@ -29,7 +29,7 @@
   height: 100px;
   border-radius: 0; /* Para hacerla cuadrada */
   object-fit: cover;
-  /* ¡Línea del borde azul eliminada! */
+  /* Borde azul eliminado */
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
 }
 
@@ -53,8 +53,18 @@
   gap: 5px; /* Pequeño espacio entre ellos */
 }
 
+.main-contact-info strong {
+  color: white; /* Hace que "Correo:" y "Teléfono:" sean blancos y fuertes */
+  font-weight: bold; /* Asegura que estén en negrita */
+}
+
+.main-contact-info .phone-number {
+  color: white; /* Hace que el número de teléfono sea blanco */
+  font-weight: bold; /* Puedes quitar esto si no quieres que el número sea negrita */
+}
+
 .main-contact-info a {
-  color: white; /* Color del enlace de contacto */
+  color: white; /* Color del enlace de correo electrónico, ya era blanco */
   text-decoration: none;
   font-weight: bold;
 }
@@ -62,6 +72,12 @@
 .main-contact-info a:hover {
   text-decoration: underline;
 }
+
+.main-contact-info .separator {
+  color: white; /* Asegura que el separador '|' sea blanco */
+  margin: 0 5px; /* Espacio alrededor del separador */
+}
+
 
 /* Estilos para la navegación dentro del header */
 .main-nav ul {
@@ -97,7 +113,8 @@
 /* --- Media Queries para adaptar a pantallas grandes (desktop) --- */
 @media (min-width: 769px) {
   .main-header-container {
-    padding: 40px 40px 20px; /* Más padding en desktop */
+    /* ¡CAMBIADO AQUÍ! Ajuste final del padding superior e inferior para desktop */
+    padding: calc(130px + env(safe-area-inset-top)) 40px 110px; /* Ajuste final de padding en desktop */
     flex-direction: column; /* Sigue siendo columna principal */
   }
 
@@ -141,6 +158,10 @@
 
 /* --- Media Queries para adaptar a pantallas muy pequeñas (ej. smartphones) --- */
 @media (max-width: 480px) {
+  .main-header-container {
+    /* ¡CAMBIADO AQUÍ! Ajuste final del padding superior e inferior para móviles */
+    padding: calc(110px + env(safe-area-inset-top)) 10px 90px; /* Ajuste final de padding superior/inferior para móviles, con safe area */
+  }
   .main-name {
     font-size: 1.8em; /* Reducir tamaño de fuente en pantallas muy pequeñas */
   }
@@ -158,4 +179,9 @@
     padding: 6px 10px; /* Ajustar padding en pantallas muy pequeñas */
     font-size: 0.85em;
   }
+  .main-contact-info .separator {
+    display: none; /* Oculta el separador '|' en móvil si no lo quieres */
+  }
 }
+
+
