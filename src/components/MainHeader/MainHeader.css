@@ -23,9 +23,10 @@
   margin-bottom: 20px;
 }
 
+/* ¡CAMBIADO AQUÍ! Aumentado el tamaño de la foto para móviles */
 .main-profile-picture {
-  width: 100px;
-  height: 100px;
+  width: 140px; /* Nuevo tamaño de la foto para móviles */
+  height: 140px; /* Nuevo tamaño de la foto para móviles */
   border-radius: 0;
   object-fit: cover;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
@@ -136,9 +137,10 @@
     margin-bottom: 30px;
   }
 
+  /* ¡CAMBIADO AQUÍ! Aumentado el tamaño de la foto para desktop */
   .main-profile-picture {
-    width: 150px;
-    height: 150px;
+    width: 200px; /* Nuevo tamaño de la foto para desktop */
+    height: 200px; /* Nuevo tamaño de la foto para desktop */
     margin-right: 30px;
   }
 
@@ -186,7 +188,7 @@
   }
   /* Ajuste para el subtítulo en móviles pequeños */
   .main-subtitle {
-    font-size: 0.85em; /* ¡CAMBIADO AQUÍ! Reduce el tamaño de fuente para que quepa mejor */
+    font-size: 0.85em;
     margin-top: 3px;
     margin-bottom: 8px;
     text-decoration: none;
@@ -196,10 +198,11 @@
   .main-contact-info {
     font-size: 0.9em;
   }
-  .main-profile-picture {
+  /* No es necesario redefinir .main-profile-picture aquí si ya se hizo arriba y es responsive */
+  /* .main-profile-picture {
     width: 90px;
     height: 90px;
-  }
+  } */
   .main-nav li {
     margin: 5px 5px;
   }
