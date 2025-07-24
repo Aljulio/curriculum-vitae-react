@@ -1,10 +1,9 @@
-// src/components/Education/Education.jsx
 import React from 'react';
 import './Education.css'; 
 
 function Education() { 
   return (
-    <section id="education" className="education-container">
+    <section id="education" className="education-container"> {/* ¡El id="education" ya está correcto! */}
       <h2 className="education-title">Estudios Realizados</h2> {/* Título actualizado */}
 
       <div className="education-item">
