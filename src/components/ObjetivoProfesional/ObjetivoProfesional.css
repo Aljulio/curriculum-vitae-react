@@ -1,0 +1,27 @@
+/* src/components/ObjetivoProfesional/ObjetivoProfesional.css */
+.objective-container {
+  background-color: #ffffff;
+  padding: 30px;
+  margin: 20px auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  text-align: center; /* Centra el texto dentro del contenedor */
+}
+
+.objective-title {
+  color: #2980b9; /* El mismo color azul que el título de PersonalInfo */
+  margin-bottom: 20px;
+  font-size: 2em; /* Tamaño similar al título de PersonalInfo */
+  text-decoration: underline;
+  text-underline-offset: 8px;
+  text-decoration-thickness: 2px;
+}
+
+.objective-description {
+  font-size: 1.1em;
+  color: #444;
+  line-height: 1.6;
+  text-align: justify; /* Justifica el texto para una mejor lectura */
+  padding: 0 20px; /* Un poco de padding horizontal */
+}

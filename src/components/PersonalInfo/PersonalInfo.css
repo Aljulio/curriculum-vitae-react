@@ -1,0 +1,102 @@
+/* src/components/PersonalInfo/PersonalInfo.css */
+.personal-info-container {
+  background-color: #ffffff;
+  padding: 30px;
+  margin: 20px auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  text-align: center;
+}
+
+.profile-picture {
+  width: 200px; /* Tamaño un poco más grande */
+  height: 200px; /* Tamaño un poco más grande */
+  /* Eliminamos border-radius: 50%; para que sea cuadrada */
+  object-fit: cover; 
+  margin-bottom: 25px;
+  border: 5px solid #2980b9; 
+}
+
+.personal-info-container h2 { 
+  color: #2980b9;
+  margin-bottom: 30px;
+  font-size: 2em;
+  text-decoration: underline;
+  text-underline-offset: 8px;
+  text-decoration-thickness: 2px;
+}
+
+.personal-details-grid {
+  display: grid;
+  grid-template-columns: 1fr; /* Por defecto, una sola columna para móviles */
+  gap: 15px 30px; 
+  text-align: left; 
+  margin: 25px auto;
+  padding: 0 20px; 
+}
+
+@media (min-width: 768px) { 
+  .personal-details-grid {
+    grid-template-columns: 1fr 1fr; 
+    max-width: 700px; 
+  }
+}
+
+.detail-item {
+  display: flex; 
+  flex-wrap: wrap; 
+  margin-bottom: 5px; 
+}
+
+.detail-label {
+  font-weight: bold;
+  color: #34495e;
+  margin-right: 8px; 
+  white-space: nowrap; 
+}
+
+.detail-value {
+  color: #555;
+  flex-grow: 1; 
+}
+
+.detail-value a {
+    color: #2980b9;
+    text-decoration: none;
+    font-weight: normal; 
+}
+
+.detail-value a:hover {
+    text-decoration: underline;
+}
+
+.full-width {
+    grid-column: 1 / -1; 
+    text-align: center; 
+    display: block; 
+    margin-top: 10px; 
+}
+.full-width .detail-label {
+    display: block; 
+    margin-bottom: 5px;
+}
+
+.objective-title { /* Aunque el título se eliminó del JSX, mantengo el estilo por si lo quieres usar para otra cosa */
+  color: #2980b9;
+  margin-top: 40px; 
+  margin-bottom: 20px;
+  font-size: 1.8em;
+  text-decoration: underline;
+  text-underline-offset: 6px;
+  text-decoration-thickness: 1.5px;
+}
+
+.profile-description {
+    margin-top: 20px;
+    font-size: 1.1em;
+    color: #444;
+    line-height: 1.6;
+    text-align: justify; 
+    padding: 0 20px; 
+}

@@ -1,0 +1,51 @@
+/* src/components/Contacto/Contacto.css */
+.contact-container {
+  background-color: #ffffff;
+  padding: 30px;
+  margin: 10px auto; /* Reducido a 10px para que las secciones estén más juntas */
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  text-align: center;
+}
+
+.contact-title {
+  color: #2980b9; /* El mismo color azul */
+  margin-bottom: 30px;
+  font-size: 2em;
+  text-decoration: underline;
+  text-underline-offset: 8px;
+  text-decoration-thickness: 2px;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column; /* Apila los elementos verticalmente */
+  align-items: center; /* Centra los elementos horizontalmente */
+  gap: 8px; /* Reducido a 8px para que los ítems de contacto estén más juntos */
+  padding: 0 20px;
+}
+
+.contact-item {
+  display: flex; /* Para que Email: y el valor estén en la misma línea */
+  align-items: center;
+  gap: 10px; /* Espacio entre el label y el valor */
+  font-size: 1.1em;
+  color: #444; /* Color de texto similar al objetivo profesional */
+  line-height: 1.6;
+}
+
+.contact-label {
+  font-weight: bold;
+  color: #34495e; /* Un poco más oscuro para el label */
+  white-space: nowrap; /* ¡Asegura que el texto de la etiqueta no se rompa de línea! */
+}
+
+.contact-value a {
+    color: #2980b9; /* Color del enlace azul */
+    text-decoration: none;
+}
+
+.contact-value a:hover {
+    text-decoration: underline;
+}

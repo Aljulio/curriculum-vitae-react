@@ -1,0 +1,27 @@
+/* src/components/Portafolio/Portafolio.css */
+.portfolio-container {
+  background-color: #ffffff;
+  padding: 30px;
+  margin: 20px auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  text-align: center;
+}
+
+.portfolio-title {
+  color: #2980b9; /* El mismo color azul */
+  margin-bottom: 30px;
+  font-size: 2em;
+  text-decoration: underline;
+  text-underline-offset: 8px;
+  text-decoration-thickness: 2px;
+}
+
+.portfolio-message {
+  font-size: 1.1em;
+  color: #444;
+  line-height: 1.6;
+  text-align: center; /* Centrar el mensaje */
+  padding: 0 20px;
+}

@@ -1,0 +1,50 @@
+/* src/components/Education/Education.css */
+.education-container {
+  background-color: #ffffff;
+  padding: 30px;
+  margin: 20px auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  text-align: center;
+}
+
+.education-title {
+  color: #2980b9; 
+  margin-bottom: 30px;
+  font-size: 2em;
+  text-decoration: underline;
+  text-underline-offset: 8px;
+  text-decoration-thickness: 2px;
+}
+
+.education-item {
+  margin-bottom: 25px;
+  text-align: left;
+  border-left: 4px solid #3498db; 
+  padding-left: 15px;
+}
+
+.education-item:last-child {
+  margin-bottom: 0; 
+}
+
+.education-item .degree {
+  font-size: 1.3em;
+  color: #34495e; /* Color más oscuro para el título del grado */
+  margin-bottom: 5px;
+}
+
+.education-item .institution {
+  font-size: 1.1em;
+  color: #444; /* Color actualizado para que coincida con la descripción del perfil */
+  margin-bottom: 5px;
+  font-style: normal; /* Eliminado el estilo cursiva */
+  line-height: 1.6; /* Añadido line-height para consistencia */
+}
+
+.education-item .date {
+  font-size: 0.95em;
+  color: #444; /* Color actualizado para que coincida con la descripción del perfil */
+  font-style: normal; /* Asegurar que no sea cursiva si alguna vez lo fue */
+}

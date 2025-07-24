@@ -1,0 +1,49 @@
+/* src/components/HabilidadesTecnicas/HabilidadesTecnicas.css */
+.skills-container {
+  background-color: #ffffff;
+  padding: 30px;
+  margin: 20px auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  text-align: center;
+}
+
+.skills-title {
+  color: #2980b9; /* El mismo color azul */
+  margin-bottom: 30px;
+  font-size: 2em;
+  text-decoration: underline;
+  text-underline-offset: 8px;
+  text-decoration-thickness: 2px;
+}
+
+.skill-category {
+  margin-bottom: 20px;
+  text-align: left;
+  border-left: 4px solid #3498db; /* Línea decorativa similar a Educación/Experiencia */
+  padding-left: 15px;
+}
+
+.skill-category:last-child {
+  margin-bottom: 0;
+}
+
+.category-title {
+  font-size: 1.3em;
+  color: #34495e; /* Color similar al título de grado/puesto */
+  margin-bottom: 10px;
+}
+
+.skill-list {
+  list-style-type: disc; /* Puntos para la lista */
+  margin-left: 20px; /* Indentación para los puntos */
+  padding: 0;
+  color: #444; /* Color de texto similar al objetivo profesional */
+  font-size: 1.1em; /* Tamaño de fuente similar al objetivo profesional */
+  line-height: 1.6; /* Espaciado de línea consistente */
+}
+
+.skill-list li {
+  margin-bottom: 5px;
+}

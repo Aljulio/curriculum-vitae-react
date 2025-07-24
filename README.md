@@ -1,70 +1,110 @@
-# Getting Started with Create React App
+# Mi Hoja de Vida Profesional - Julio Alberto Hernández Morales
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Descripción del Proyecto
 
-## Available Scripts
+Este proyecto es una aplicación web personal diseñada para presentar mi hoja de vida (currículum vitae) de manera interactiva y responsiva. Fue desarrollada utilizando **React.js** para construir una interfaz de usuario dinámica y moderna, y **Vite** como herramienta de construcción rápida para el desarrollo.
 
-In the project directory, you can run:
+El objetivo principal es mostrar mis datos personales, objetivo profesional, formación académica, experiencia laboral y habilidades técnicas de una forma clara y accesible desde cualquier dispositivo (móvil, tablet, escritorio).
 
-### `npm start`
+## Características Clave
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+* **Diseño Responsivo:** Adaptable a diferentes tamaños de pantalla para una experiencia de usuario óptima en cualquier dispositivo.
+* **Tecnologías Modernas:** Construido con React (Vite) para un desarrollo eficiente y un rendimiento optimizado.
+* **Navegación Intuitiva:** Secciones claras (Personal, Objetivo, Formación, Experiencia, Habilidades, Portafolio, Contacto) con navegación fluida.
+* **Contenido Detallado:** Incluye información esencial para un perfil profesional completo.
+* **Publicación en GitHub Pages:** Acceso público y gratuito a través de un enlace web.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Tecnologías Utilizadas
 
-### `npm test`
+Este proyecto fue desarrollado utilizando las siguientes tecnologías clave:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+* **React (Vite):** Un framework de JavaScript para construir interfaces de usuario interactivas. Vite se utilizó como el "bundler" y servidor de desarrollo, proporcionando una experiencia de desarrollo rápida y moderna.
+* **HTML5:** Lenguaje de marcado para la estructura fundamental del contenido web.
+* **CSS3:** Hoja de estilos en cascada para el diseño y la presentación visual de la aplicación, incluyendo la adaptabilidad (responsive design).
+* **JavaScript (ES6+):** Lenguaje de programación principal para la lógica interactiva del lado del cliente.
+* **GH-Pages:** Una librería de Node.js utilizada para simplificar el proceso de despliegue de proyectos web a GitHub Pages.
 
-### `npm run build`
+## Instrucciones de Uso
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Sigue estos pasos para obtener una copia local del proyecto, instalar sus dependencias, ejecutarlo en modo desarrollo y publicarlo en GitHub Pages.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 1. Clonar el Repositorio
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Para obtener el código fuente en tu máquina local, abre tu terminal (como la de Visual Studio Code) y ejecuta el siguiente comando:
 
-### `npm run eject`
+```bash
+git clone [https://github.com/Aljulio/MiCV.git](https://github.com/Aljulio/MiCV.git)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Una vez clonado, navega a la carpeta del proyecto:
+```bash
+cd MiCV
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### 2. Instalación de Dependencias
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Con la terminal dentro de la carpeta `MiCV`, instala todas las dependencias necesarias del proyecto. Asegúrate de tener Node.js y npm (o Yarn) instalados en tu sistema.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```bash
+npm install
+# o si usas yarn:
+# yarn install
 
-## Learn More
+### 3. Ejecutar el Proyecto Localmente (Modo Desarrollo)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Una vez que las dependencias estén instaladas, puedes iniciar el servidor de desarrollo para ver el proyecto en tu navegador local. Esto es útil para trabajar y probar cambios.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```bash
+npm run dev
 
-### Code Splitting
+### 4. Construir el Proyecto para Producción
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Para crear una versión optimizada del proyecto lista para ser desplegada (con el código JavaScript y CSS minificado y optimizado), ejecuta el siguiente comando:
 
-### Analyzing the Bundle Size
+```bash
+npm run build
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### 5. Desplegar el Proyecto a GitHub Pages
 
-### Making a Progressive Web App
+Para publicar tu hoja de vida en GitHub Pages, debes tener el repositorio correctamente configurado en GitHub (rama `gh-pages` como fuente de Pages). Luego, ejecuta el comando de despliegue desde la terminal de tu proyecto:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+```bash
+npm run deploy
 
-### Advanced Configuration
+Una vez que el despliegue esté completo (puede tardar unos minutos), tu CV estará accesible públicamente en la siguiente URL:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+**[https://Aljulio.github.io/MiCV/](https://Aljulio.github.io/MiCV/)**
 
-### Deployment
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## Estructura del Proyecto
+Después de la sección "5. Desplegar el Proyecto a GitHub Pages" y la línea npm run deploy, lo que sigue en tu README.md es la explicación final sobre el acceso a tu CV en línea, seguida de la Estructura del Proyecto y la sección de Autor.
 
-### `npm run build` fails to minify
+Aquí tienes el resto del contenido del README.md para que lo copies y pegues justo después de la línea npm run deploy en tu archivo README.md:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Markdown
+
+Una vez que el despliegue esté completo (puede tardar unos minutos), tu CV estará accesible públicamente en la siguiente URL:
+
+**[https://Aljulio.github.io/MiCV/](https://Aljulio.github.io/MiCV/)**
+
+---
+
+## Estructura del Proyecto
+
+.
+├── public/                 # Archivos estáticos (imágenes, favicons, etc.)
+│   └── images/             # Tus imágenes de perfil
+├── src/                    # Código fuente de React
+│   ├── assets/             # (Opcional) Otros assets estáticos
+│   ├── components/         # Componentes reutilizables (Personal, Objetivo, etc.)
+│   ├── App.jsx             # Componente principal de la aplicación
+│   ├── index.css           # Estilos CSS globales
+│   └── main.jsx            # Punto de entrada de la aplicación React
+├── .gitignore              # Archivos y carpetas ignorados por Git
+├── package.json            # Metadatos del proyecto y scripts de npm
+├── vite.config.js          # Configuración de Vite
+├── README.md               # Este archivo de documentación
+└── index.html              # Archivo HTML principal
+
+---
+## Autor
+**Julio Alberto Hernández Morales**
