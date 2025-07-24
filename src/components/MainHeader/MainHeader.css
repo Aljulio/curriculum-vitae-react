@@ -1,6 +1,26 @@
 /* Estilos para el nuevo componente MainHeader (Encabezado principal) */
 .main-header-container {
-  background-color: #4285F4; /* Tu azul principal */
+  /* Fondo de Nebulosa / Espacio Profundo Notorio */
+  background:
+    /* Capas de Estrellas (pequeñas, blancas, muy sutiles pero visibles) */
+    radial-gradient(circle at 10% 20%, rgba(255, 255, 255, 0.15) 0%, transparent 5%),
+    radial-gradient(circle at 70% 80%, rgba(255, 255, 255, 0.12) 0%, transparent 8%),
+    radial-gradient(circle at 40% 60%, rgba(255, 255, 255, 0.1) 0%, transparent 6%),
+    radial-gradient(circle at 90% 40%, rgba(255, 255, 255, 0.13) 0%, transparent 7%),
+    /* Nubes de Gas / Nebulosa (más grandes, difusas y con colores vibrantes) */
+    radial-gradient(circle at 25% 75%, rgba(66, 133, 244, 0.6) 0%, transparent 60%), /* Tu azul principal denso */
+    radial-gradient(circle at 80% 15%, rgba(100, 50, 150, 0.5) 0%, transparent 60%), /* Tono púrpura denso */
+    radial-gradient(circle at 50% 50%, rgba(135, 206, 235, 0.4) 0%, transparent 50%), /* Toque de cian/azul claro */
+    radial-gradient(circle at 15% 40%, rgba(42, 82, 190, 0.55) 0%, transparent 70%), /* Azul profundo denso */
+    /* Planetas (formas esféricas sutiles con sombreado) */
+    radial-gradient(circle at 95% 95%, #304060 0%, #1a2030 70%, transparent 80%), /* Planeta oscuro en esquina */
+    radial-gradient(circle at 5% 5%, #506080 0%, #304060 60%, transparent 70%), /* Planeta más claro en esquina */
+    /* Fondo base de espacio profundo (degradado de azul muy oscuro a casi negro) */
+    linear-gradient(135deg, #0d1a2a 0%, #0a101a 100%); /* Degradado de azul muy oscuro a casi negro */
+
+  background-size: 300% 300%; /* Mantenemos el tamaño grande para el movimiento fluido */
+  animation: cosmicFlow 25s ease infinite alternate; /* ¡CAMBIADO AQUÍ! Animación ahora dura 25 segundos */
+
   color: white; /* Texto blanco */
   padding: calc(110px + env(safe-area-inset-top)) 20px 90px;
   display: flex;
@@ -40,6 +60,7 @@
   margin: 0;
   margin-bottom: 5px;
   line-height: 1.2;
+  color: rgba(255, 255, 255, 0.9); /* Color del título principal a blanco con 90% de opacidad */
 }
 
 /* Estilos para el subtítulo */
@@ -137,7 +158,7 @@
   }
 
   .main-profile-picture {
-    width: 200px;
+    width: 200px; /* Tamaño de la foto para desktop */
     height: 200px;
     margin-right: 30px;
   }
@@ -186,7 +207,7 @@
   }
   /* Ajuste para el subtítulo en móviles pequeños */
   .main-subtitle {
-    font-size: 0.75em; /* ¡CAMBIADO AQUÍ! Reduce aún más el tamaño de fuente para que quepa bien en móviles muy pequeños */
+    font-size: 0.75em; /* Reduce aún más el tamaño de fuente para que quepa bien en móviles muy pequeños */
     margin-top: 3px;
     margin-bottom: 8px;
     text-decoration: none;
@@ -204,5 +225,15 @@
   }
   .main-contact-info .separator {
     display: none;
+  }
+}
+
+/* Definición de la animación para el fondo de nebulosa cósmica */
+@keyframes cosmicFlow {
+  from {
+    background-position: 0% 0%; /* Inicia en una esquina */
+  }
+  to {
+    background-position: 100% 100%; /* Se mueve a la esquina opuesta */
   }
 }
