@@ -1,10 +1,10 @@
 import './App.css';
-import Navegacion from './components/Navegacion/Navegacion';
+import MainHeader from './components/MainHeader/MainHeader'; // ¡NUEVA LÍNEA: Importa el MainHeader!
 
-// Importa todos tus componentes de sección
+// Importa los componentes de tus secciones de contenido
 import PersonalInfo from './components/PersonalInfo/PersonalInfo';
 import ObjetivoProfesional from './components/ObjetivoProfesional/ObjetivoProfesional'; 
-import Education from './components/Education/Education'; // ¡NUEVA LÍNEA: Importa el componente Education!
+import Education from './components/Education/Education'; 
 import ExperienciaLaboral from './components/ExperienciaLaboral/ExperienciaLaboral';
 import HabilidadesTecnicas from './components/HabilidadesTecnicas/HabilidadesTecnicas';
 import Portafolio from './components/Portafolio/Portafolio';
@@ -13,12 +13,12 @@ import Contacto from './components/Contacto/Contacto';
 function App() {
   return (
     <div className="App">
-      <Navegacion />     
-
-      {/* Las secciones de tu CV en el orden deseado */}
+      <MainHeader />     {/* ¡NUEVO: Tu encabezado principal con foto, nombre, contacto y navegación! */}
+      
+      {/* Las secciones de tu CV que vienen después del encabezado */}
       <PersonalInfo />
       <ObjetivoProfesional /> 
-      <Education /> {/* ¡NUEVA LÍNEA: Renderiza el componente Education! */}
+      <Education /> 
       <ExperienciaLaboral />
       <HabilidadesTecnicas />
       <Portafolio />

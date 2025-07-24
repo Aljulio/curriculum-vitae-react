@@ -1,0 +1,156 @@
+/* Estilos para el nuevo componente MainHeader (Encabezado principal) */
+.main-header-container {
+  background-color: #4285F4; /* Tu azul principal */
+  color: white; /* Texto blanco */
+  padding: 30px 20px 10px; /* Padding superior, horizontal, inferior */
+  display: flex;
+  flex-direction: column; /* Apilar elementos (contenido y nav) */
+  align-items: center; /* Centrar horizontalmente */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+  
+  /* ¡PROPIEDADES ELIMINADAS PARA QUE YA NO SEA FIJO! */
+  /* position: sticky; */ 
+  /* top: 0;            */
+  /* z-index: 1000;     */
+}
+
+.main-header-content {
+  display: flex;
+  flex-direction: column; /* Por defecto apilado: foto, luego info */
+  align-items: center; /* Centrar elementos */
+  gap: 15px; /* Espacio entre foto e info */
+  width: 100%;
+  max-width: 900px; /* Ancho máximo para el contenido */
+  margin-bottom: 20px; /* Espacio entre el contenido principal y la nav */
+}
+
+.main-profile-picture {
+  width: 100px; /* Tamaño de la foto */
+  height: 100px;
+  border-radius: 50%; /* Hacerla circular */
+  object-fit: cover; /* Asegura que la imagen cubra el área sin distorsionarse */
+  border: 3px solid white; /* Borde blanco alrededor de la foto */
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2); /* Sombra para la foto */
+}
+
+.main-info {
+  text-align: center; /* Centrar el texto en móvil */
+}
+
+.main-name {
+  font-size: 2.2em; /* Tamaño del nombre */
+  margin: 0;
+  margin-bottom: 5px;
+  line-height: 1.2;
+}
+
+.main-contact-info {
+  font-size: 1em;
+  margin: 0;
+  opacity: 0.9;
+}
+
+.main-contact-info a {
+  color: white; /* Color del enlace de contacto */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.main-contact-info a:hover {
+  text-decoration: underline;
+}
+
+/* Estilos para la navegación dentro del header */
+.main-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* Para que los elementos se envuelvan en pantallas pequeñas */
+  width: 100%; /* Ocupa todo el ancho disponible */
+}
+
+.main-nav li {
+  margin: 5px 10px; /* Espacio entre los elementos de la lista */
+}
+
+.main-nav a {
+  text-decoration: none;
+  color: white; /* Enlaces blancos en la nav bar */
+  font-weight: bold;
+  padding: 8px 15px; /* Más padding para hacer el área de clic más grande */
+  transition: background-color 0.3s ease, color 0.3s ease;
+  border-radius: 5px; /* Esquinas redondeadas para los botones */
+  display: block; /* Para que el padding sea efectivo en toda el área del enlace */
+}
+
+.main-nav a:hover {
+  background-color: rgba(255, 255, 255, 0.2); /* Fondo semi-transparente al pasar el ratón */
+  color: white;
+}
+
+
+/* --- Media Queries para adaptar a pantallas grandes (desktop) --- */
+@media (min-width: 769px) {
+  .main-header-container {
+    padding: 40px 40px 20px; /* Más padding en desktop */
+    flex-direction: column; /* Sigue siendo columna principal */
+  }
+
+  .main-header-content {
+    flex-direction: row; /* En fila para desktop */
+    justify-content: flex-start; /* Alinear a la izquierda */
+    align-items: center;
+    text-align: left; /* Alinear texto a la izquierda */
+    margin-bottom: 30px; /* Más espacio entre info y nav */
+  }
+
+  .main-profile-picture {
+    width: 150px; /* Foto más grande en desktop */
+    height: 150px;
+    margin-right: 30px; /* Espacio a la derecha de la foto */
+  }
+  
+  .main-name {
+    font-size: 3em; /* Nombre más grande en desktop */
+  }
+
+  .main-contact-info {
+    font-size: 1.2em;
+  }
+
+  .main-nav ul {
+    justify-content: center; /* Centrar la navegación en desktop */
+  }
+
+  .main-nav li {
+    margin: 0 20px; /* Más espacio entre enlaces en desktop */
+  }
+
+  .main-nav a {
+    padding: 10px 20px; /* Más padding en desktop */
+    font-size: 1.1em;
+  }
+}
+
+/* --- Media Queries para adaptar a pantallas muy pequeñas (ej. smartphones) --- */
+@media (max-width: 480px) {
+  .main-name {
+    font-size: 1.8em; /* Reducir tamaño de fuente en pantallas muy pequeñas */
+  }
+  .main-contact-info {
+    font-size: 0.9em;
+  }
+  .main-profile-picture {
+    width: 90px;
+    height: 90px;
+  }
+  .main-nav li {
+    margin: 5px 5px; /* Reducir aún más el margen en pantallas muy pequeñas */
+  }
+  .main-nav a {
+    padding: 6px 10px; /* Ajustar padding en pantallas muy pequeñas */
+    font-size: 0.85em;
+  }
+}
